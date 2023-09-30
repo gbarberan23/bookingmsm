@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/home/Home";
 import List from "./pages/list/List";
+import Room from "./pages/room/Room";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/rooms" element={<List/>}/>
+        <Route path="/rooms/:id" element={<Room/>}/>
 
       </Routes>
     </BrowserRouter>
