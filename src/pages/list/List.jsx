@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom"
 import { useState } from "react"
 import { format } from "date-fns"
 import SearchItem from "../../components/searchItem/SearchItem";
-import Footer from "../../components/footer/Footer";
+//import Footer from "../../components/footer/Footer";
 
 
 const List = () => {

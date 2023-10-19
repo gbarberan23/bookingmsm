@@ -43,10 +43,6 @@ const Header = ({ type }) => {
       date, 
       options } });
   };
-
-
-
-
   return (
     <div className="header">
       <div className= {type === "list" ? "headerContainer listMode":"headerContainer"}>
