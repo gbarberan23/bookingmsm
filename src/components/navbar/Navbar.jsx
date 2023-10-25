@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="navbar">
         <div className="navContainer">
         <a class="navbar-brand" routerLink="">
-        <img src="././assest/logo.png" alt="Logo" />
+        <span className="logo">lamabooking</span>
         </a>
             <div className="navItem">
                 <button className="navButton">Register</button>

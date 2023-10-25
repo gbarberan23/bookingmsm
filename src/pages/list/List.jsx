@@ -8,15 +8,13 @@ import { format } from "date-fns"
 import SearchItem from "../../components/searchItem/SearchItem";
 //import Footer from "../../components/footer/Footer";
 
-
 const List = () => {
-
-  const location = useLocation()
+  const location = useLocation();
   const [destination, setDestination] = useState(location.state.destination);
   const [date, setDate] = useState(location.state.date);
   const [openDate, setOpenDate] = useState(false);
   const [options, setOptions] = useState(location.state.options);
-  //console.log(location)
+
   return (
     <div>
     <Navbar />
@@ -24,7 +22,7 @@ const List = () => {
     <div className="listContainer">
       <div className="listWrapper">
         <div className="listSearch">
-          <h1 className="lsTitle">Search</h1>
+          <h1 className="lsTitle">Search</h1>   
           <div className="lsItem">
             <label>Destination</label>
             <input placeholder={destination} type="text" />
@@ -90,15 +88,16 @@ const List = () => {
           <button>Search</button>
         </div>
         <div className="listResult">
-           <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
+          <SearchItem />
+          <SearchItem />
+          <SearchItem />
+          <SearchItem />
+          <SearchItem />
+          <SearchItem />
+          <SearchItem />
+          <SearchItem />
+          <SearchItem />
+          <SearchItem />
         </div>
       </div>
     </div>
