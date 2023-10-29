@@ -1,6 +1,8 @@
 import "./list.css"
 import Header from '../../components/header/Header'
 import Navbar from '../../components/navbar/Navbar'
+import Footer from "../../components/footer/Footer";
+import MailList from "../../components/mailList/MailList";
 import { DateRange } from 'react-date-range';
 import { useLocation } from "react-router-dom"
 import { useState } from "react"
@@ -16,7 +18,7 @@ const List = () => {
   const [options, setOptions] = useState(location.state.options);
 
   return (
-    <div>
+    <div className="totalpage">
     <Navbar />
     <Header type="list" />
     <div className="listContainer">
@@ -100,6 +102,8 @@ const List = () => {
           <SearchItem />
         </div>
       </div>
+      <MailList />
+      <Footer />
     </div>
   </div>
   
